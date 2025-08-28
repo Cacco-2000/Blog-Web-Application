@@ -1,0 +1,77 @@
+:root 
+{
+    --primary-bg: #578FCA;
+    --nav-bg: #3674B5;
+    --text-light: #A1E3F9;
+    --text-lighter: #D1F8EF;
+    --btn-hover-green: #4cae4c;
+    --btn-hover-red: #D9534F;
+}
+
+.about-main .container
+{
+    border-left: 15px solid var(--nav-bg);
+    padding-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 90%;
+    border-radius: 10px;
+
+}
+
+.about-main h2
+{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.about-main h3
+{
+    padding-left: 4%;
+    font-size: 1.5rem;
+}
+
+.about-main p
+{
+    padding-left: 4%;
+    font-size: 1.5rem;
+}
+
+.about-main a
+{
+    color: var(--text-lighter);
+    text-decoration: underline;
+}
+
+.about-main a:hover
+{
+    color: var(--text-light);
+}
+
+
+img
+{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    object-fit: cover;
+}
+
+#image
+{
+    display: inline-block;
+}
+
+#image img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    margin-left: 2%;
+}
+
+#image img:hover
+{
+    border: 8px solid var(--text-light);
+}

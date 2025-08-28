@@ -1,0 +1,110 @@
+:root 
+{
+    --primary-bg: #578FCA;
+    --nav-bg: #3674B5;
+    --text-light: #A1E3F9;
+    --text-lighter: #D1F8EF;
+    --btn-hover-green: #4cae4c;
+    --btn-hover-red: #D9534F;
+}
+
+header nav
+{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: var(--nav-bg);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    top: 0;
+}
+
+header nav .nav_title
+{
+    align-self: flex-start;
+    width: 25%;
+}
+
+header nav h1
+{
+    font-size: 40px;
+    padding-left: 0px;
+}
+
+header nav h2
+{
+    font-size: 22px;
+    padding-left: 0px;
+}
+
+header nav ul
+{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    list-style: none;
+    width: 50%;
+
+}
+
+.second-list, .second-list-container
+{
+    display: none;
+}
+
+@media screen and (max-width: 760px) 
+{
+    header nav
+    {
+        position: static;
+        text-align: center;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    header nav ul
+    {
+        display: none; 
+    }
+
+    header nav .nav_title
+    {
+        width: 100%;
+    }
+
+    header nav h1, 
+    header nav h2 
+    {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    body
+    {
+        padding-top: 0px;
+    }
+
+    .second-list-container
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5%;
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .second-list
+    {
+        list-style: none;
+        display: contents;
+    }
+}

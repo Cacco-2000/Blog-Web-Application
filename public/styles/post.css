@@ -1,0 +1,50 @@
+:root 
+{
+    --primary-bg: #578FCA;
+    --nav-bg: #3674B5;
+    --text-light: #A1E3F9;
+    --text-lighter: #D1F8EF;
+    --btn-hover-green: #4cae4c;
+    --btn-hover-red: #D9534F;
+}
+
+.post-main .container
+{
+    max-width: 600px;
+    min-height: 30%;
+    max-height: 80%;
+    height: fit-content;
+    margin: 40px auto;
+    padding: 20px;
+    border-left: 10px solid var(--nav-bg);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.post-main h1 
+{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.post-main h2 
+{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.post-main p 
+{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding-left: 5%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

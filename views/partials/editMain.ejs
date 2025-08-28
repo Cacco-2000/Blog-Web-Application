@@ -1,0 +1,25 @@
+<main class="blog-main">
+    <h1>Edit Blog Post</h1>
+    <div class="container">
+        <form action="/update/<%= postId %>" method="POST">
+            <label for="title1"><h2>First Title: </h2></label>
+            <input type="text" name="title1" value="<%= blog.title1 %>" required>
+
+            <label for="title2"><h2>Second Title: </h2></label>
+            <input type="text" name="title2" value="<%= blog.title2 %>" required>
+
+            <label for="content"><h2>Content: </h2></label>
+            <textarea name="description" rows="6" required><%= blog.description %></textarea>
+
+            <input type="submit" class="save-btn" value="Save Changes">
+        </form> 
+
+        <div class="btn-container">
+            <form action="/delete/<%= postId %>" method="POST">
+                <button type="submit" class="delete-btn">Delete</button>
+            </form>
+
+            <a href="/" class="back-btn">Back</a>
+        </div>
+    </div>
+</main>

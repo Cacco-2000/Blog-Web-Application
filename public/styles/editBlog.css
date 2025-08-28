@@ -1,0 +1,70 @@
+:root 
+{
+    --primary-bg: #578FCA;
+    --nav-bg: #3674B5;
+    --text-light: #A1E3F9;
+    --text-lighter: #D1F8EF;
+    --btn-hover-green: #4cae4c;
+    --btn-hover-red: #D9534F;
+}
+
+.btn-container form 
+{
+    display: inline-block;
+    margin: 0;
+}
+
+
+.save-btn, .delete-btn, .back-btn
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 100px;
+    height: 40px;
+}
+
+input[type="submit"].save-btn 
+{
+    background-color: var(--nav-bg);
+    color: var(--text-lighter);
+}
+
+input[type="submit"].save-btn:hover 
+{
+    background-color: var(--btn-hover-green);
+}
+
+.back-btn 
+{
+    background-color: var(--nav-bg);
+    color: var(--text-lighter);
+}
+
+.back-btn:hover 
+{
+    background-color: var(--text-light);
+    color: var(--nav-bg);
+    text-decoration: none;
+}
+
+
+
+.delete-btn 
+{
+    background-color: var(--nav-bg);
+    color: var(--text-lighter);
+}
+
+.delete-btn:hover 
+{
+    background-color: var(--btn-hover-red); 
+}

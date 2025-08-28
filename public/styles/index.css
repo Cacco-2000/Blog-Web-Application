@@ -1,0 +1,75 @@
+:root 
+{
+    --primary-bg: #578FCA;
+    --nav-bg: #3674B5;
+    --text-light: #A1E3F9;
+    --text-lighter: #D1F8EF;
+    --btn-hover-green: #4cae4c;
+    --btn-hover-red: #D9534F;
+}
+
+.index-main .container
+{
+    border-left: 15px solid var(--nav-bg);
+    padding-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+
+.index-main h3
+{
+    font-size: 1.5rem;
+    display: inline;
+}
+
+.index-main h3:hover
+{
+    color: var(--text-light);
+}
+
+.index-main p
+{
+    font-size: 1.5rem;
+}
+
+.index-main .btn-container 
+{
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.edit-btn
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 100px;
+    height: 40px;
+}
+
+.edit-btn 
+{
+    background-color: var(--nav-bg);
+    color: var(--text-lighter);
+}
+
+.edit-btn:hover 
+{
+    background-color: var(--text-light);
+    color: var(--nav-bg);
+    text-decoration: none;
+}

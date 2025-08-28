@@ -1,0 +1,18 @@
+<main class="index-main">
+    <h1>Add or read the blogs you desire!</h1>
+    <h2>Blogs: </h2>
+    <% for (let i = 0; i < blog.length; i++) { %>
+        <div class="container">
+            <a href="/post/<%= i %>">
+                <h3><%= blog[i].title1 %></h3>
+            </a>
+            <p><%= blog[i].title2 %></p>
+
+            <% if (i >= 3) { %>
+                <div class ="btn-container">
+                    <a href="/edit/<%= i %>" class="edit-btn">Edit</a> 
+                </div>
+            <% } %>
+        </div>
+    <% } %>
+</main>
